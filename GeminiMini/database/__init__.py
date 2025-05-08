@@ -19,6 +19,7 @@
 
 import os
 import time
+from config import *
 from datetime import datetime as dt
 
 from motor import motor_asyncio
