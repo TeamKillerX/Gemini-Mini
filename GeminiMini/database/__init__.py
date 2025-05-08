@@ -29,6 +29,7 @@ class Database:
     def __init__(self, uri: str) -> None:
         self.client: AgnosticClient = motor_asyncio.AsyncIOMotorClient(uri)
         self.db = self.client["Gemini"]
+        self.addstart = self.db["broadcast_list"]
         self.backup_chatbot = self.db["google_genai"]
 
     async def connect(self):
