@@ -1,0 +1,10 @@
+Pillow==9.5.0
+requests>=2.28.1
+google-genai
+motor
+typing
+TgCrypto
+python-dotenv
+GitPython
+
+git+https://github.com/KurimuzonAkuma/pyrogram.git@refs/tags/v2.1.30#egg=pyrogram
