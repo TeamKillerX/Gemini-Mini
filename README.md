@@ -1,6 +1,6 @@
 # Gemini Mini Bot
 
-**Gemini Mini** is a lightweight, modular Pyrogram-based Telegram bot powered by Google Gemini AI.  
+**Gemini Mini** is a lightweight, modular Pyrogram-based Telegram bot powered by Google Gemini AI.
 It supports multi-turn conversations, image generation, translations, and more — all designed to be fast and efficient.
 
 ---

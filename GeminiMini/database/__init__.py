@@ -19,12 +19,14 @@
 
 import os
 import time
-from config import *
 from datetime import datetime as dt
 
 from motor import motor_asyncio
 from motor.core import AgnosticClient
+
+from config import *
 from GeminiMini.helper.logger import LOGS
+
 
 class Database:
     def __init__(self, uri: str) -> None:

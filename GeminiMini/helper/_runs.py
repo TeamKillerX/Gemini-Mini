@@ -19,12 +19,13 @@
 
 import asyncio
 import traceback
-from pyrogram import idle
 from contextlib import closing, suppress
 
+from pyrogram import idle
+
 from GeminiMini import GeminiMiniClient
-from GeminiMini.helper.logger import LOGS
 from GeminiMini.database import db
+from GeminiMini.helper.logger import LOGS
 
 loop = asyncio.get_event_loop()
 
