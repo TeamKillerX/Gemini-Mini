@@ -21,6 +21,7 @@ from pyrogram import *
 from pyrogram.types import *
 
 from GeminiMini.helper.invoke_types import *
+from GeminiMini.helper.regex_helper import *
 from GeminiMini.helper.logger import LOGS
 
 gen = ini_client_gemini()
@@ -53,6 +54,8 @@ async def gemini_mini_talk(client, message):
     if message.text:
         query = message.text.strip()
         try:
+            if is_blacklisted_english(query):
+                return
             response = await gen.aio.models.generate_content(
                 model="gemini-2.0-flash-001",
                 contents=query,
