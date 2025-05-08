@@ -17,7 +17,12 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+from config import *
+from google import genai
 from google.genai import types as gen_types
+
+def ini_client_gemini():
+    return genai.Client(api_key=GOOGLE_API_KEY)
 
 def setting_system_prompt_in_gemini(system_instruction: str):
     return gen_types.GenerateContentConfig(
