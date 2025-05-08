@@ -30,7 +30,12 @@ gen = ini_client_gemini()
     & filters.command(["start"])
     & ~filters.forwarded
 )
-async def startcmd(_, message):
+async def startcmd(client, message):
+    await client._db.addstart.update_one(
+        {"bot_id": client.me.id},
+        {"$addToSet": {"user_id": message.from_user.id}},
+        upsert=True
+    )
     return await message.reply_text(
        "Type anything to begin." 
     )
