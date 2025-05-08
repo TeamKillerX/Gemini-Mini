@@ -59,7 +59,7 @@ python3 -m GeminiMini
 
 * **TeamKillerX** — main developer and project lead
 * **Google AI Developers** — for Gemini API and AI tools
-* **Pyrogram** — Telegram MTProto API framework
+* **[Pyrogram, kurigram]** — Telegram MTProto API framework
 * **MongoDB** — async NoSQL database used for optional features
 
 ---
