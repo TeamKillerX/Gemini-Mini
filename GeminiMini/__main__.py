@@ -22,7 +22,7 @@ import logging
 import sys
 
 from uvloop import install
-from contextlib import closing
+from contextlib import closing, suppress
 from GeminiMini.helper._runs import *
 
 loop = asyncio.get_event_loop()
